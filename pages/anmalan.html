@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../style/ag.css" />
+<title>AG 2016</title>
+
+</head>
+
+<body onload="document.frmLogin.txtMnr.focus();">
+<!--
+-->
+<script type="text/JavaScript" src="../scripts/anmalan-validation.js"></script>
+
+	<header>
+		<div id="div-header-title">
+			<h3>AG 2016</h3>
+		</div>
+		<div id="div-header-figure">
+			<figure align="right">
+				<img src="../images/gbg-skyline.jpg" width="150" height="58">
+			</figure>
+		</div>
+	</header>
+
+	<nav>
+		<ul id="ul-nav">
+			<li id="li-nav"><a href="../AG-2016.html">Hem</a></li>
+			<li id="li-nav"><a href="program.html">Program</a></li>
+			<li id="li-nav"><a href="boende.html">Boende</a></li>
+			<li id="li-nav"><a href="faq.html">FAQ</a></li>
+			<li id="li-nav"><a href="anmalan.html">Anmälan</a></li>
+			<li id="li-nav"><a href="en.html">English</a></li>
+		</ul>
+	</nav>
+	
+	<article> <!-- Formulär -->
+	<h3>Anmälan</h3>
+
+	</article>
+
+	<aside>
+		<form name="frmLogin" method="post" onsubmit="return validate(this);">
+			<fieldset>
+				<legend>Inloggning</legend>
+				Medlemsnummer:<br>
+				<input type="text" name="txtMnr"><br><br>
+				Lösenord:<br>
+				<input type="password" name="pwdPwd"><br><br>
+				
+				<input type="submit" value="Logga in">
+			</fieldset>
+		</form>
+	</aside>
+
+
+	
+
+	<footer>
+		<p><small>&copy; Sten, <time datetime="2015-06-20T17:26">Juli 2015</time></small></p>
+	</footer>
+</body>
+</html>

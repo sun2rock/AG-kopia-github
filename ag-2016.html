@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/ag.css" />
+<meta name="author" content="AG-2016 IT-group">
+<title>Årsträff 2016</title>
+
+<script src="storage.js"></script>
+</head>
+
+<body onload="document.frmLogin.txtMnr.focus();">
+
+	<header>
+		<div id="div-header-title">
+			<h3>Årsträff 2016</h3>
+		</div>
+		<div id="div-header-figure">
+			<figure align="right">
+				<img src="images/gbg-skyline.jpg" width="150" height="58">
+			</figure>
+		</div>
+	</header>
+
+	<nav>
+		<ul id="ul-nav">
+			<li id="li-nav"><a href="AG-2016.html">Hem</a></li>
+			<li id="li-nav"><a href="pages/program.html">Program</a></li>
+			<li id="li-nav"><a href="pages/boende.html">Boende</a></li>
+			<li id="li-nav"><a href="pages/faq.html">FAQ</a></li>
+			<li id="li-nav"><a href="pages/anmalan.html">Anmälan</a></li>
+			<li id="li-nav"><a href="pages/en.html">English</a></li>
+			<li id="li-nav"><a href="pages/admin.html" title="Administration" onclick="window.open(this.href, 'Administration', 'scrollbars,resizable=no,location=no,width=500,height=400,left=200');
+				return false;">.</a></li>
+		</ul>
+	</nav>
+	
+<!--
+	<aside id="as-submeny">
+		<p><a href="">Internlänk 1</a></p>
+		<p><a href="">Internlänk 2</a></p>
+	</aside>
+-->		
+	<article>
+		<h4>Årsträff i Göteborg!</h4>
+		<script type="text/JavaScript">
+			var today = new Date()
+			var agStart = new Date(2016,04,05)
+			var daysRemaining = (agStart - today)
+			daysRemaining = daysRemaining/86400000;
+			daysRemaining = Math.ceil(daysRemaining);
+			document.write("Årsträffen börjar om " + daysRemaining + " dagar.");
+		</script>
+		<p>Lorem ipsum mensanum...</p>
+		<p>Mensa est supellex cui sunt saltem unus sed plerumque quattuor pedes et tabula plata, in qua res poni possunt. Mensae ad edendum, scribendum, laborandum, ludandum et alias actiones adhibentur. Plerumque ex ligno, sed aliquando ex lapide, metallo, plastico, vitrove struuntur.</p>
+	</article>
+
+	<aside>
+		<form name="frmLogin" method="post" onsubmit="alert('Error: Check IQ')">
+			<fieldset>
+				<legend>Inloggning</legend>
+				Medlemsnummer:<br>
+				<input type="text" name="txtMnr"><br><br>
+				Lösenord:<br>
+				<input type="password" name="pwdPwd"><br><br>
+				
+				<input type="submit" value="Logga in">
+			</fieldset>
+		</form>
+	</aside>	
+
+	<footer>
+		<p><small>&copy; Sten | <time datetime="2015-06-20T17:26">September 2015</time><a href="mailto:info.ag2016@mensa.se"> | Kontakt</small></p>
+	</footer>
+</body>
+</html>
